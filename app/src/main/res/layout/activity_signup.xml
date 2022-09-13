@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".SignupActivity">
+    tools:context=".UI.SignupActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -52,8 +52,8 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="40dp"
-        android:layout_height="34dp"
+        android:layout_width="54dp"
+        android:layout_height="42dp"
         android:backgroundTint="#E91E63"
         app:layout_constraintBottom_toBottomOf="@+id/etConfirm"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,7 +74,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etConfirm" />
+        app:layout_constraintTop_toBottomOf="@+id/etConfirm"
+        app:layout_constraintVertical_bias="1.0" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail2"
@@ -189,6 +190,35 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imgphone"
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="328dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etPhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etPhoneNumber"
+        app:srcCompat="@drawable/ic_baseline_phone_callback_24" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="326dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgphone"
+        app:layout_constraintTop_toBottomOf="@+id/etConfirm">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tilPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="hint" />
     </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
